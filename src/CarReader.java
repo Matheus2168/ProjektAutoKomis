@@ -14,9 +14,11 @@ public class CarReader {
 
     void showCarsList(){
         File folderList[] = CarsFolder.listFiles();
+        System.out.println("LISTA SAMOCHODÓW: \n");
         for (File file: folderList) {
 
             System.out.println(file.toString());
         }
+        System.out.println("\n");
     }
 }
